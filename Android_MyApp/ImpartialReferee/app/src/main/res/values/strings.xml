@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">試作品</string>
+    <string name="bt_selectElement">判定を開始する</string>
+    <string name="sw_deleteMode">削除モード</string>
+    <string name="sw_deleteModeOFF">OFF</string>
+    <string name="sw_deleteModeON">ON</string>
+    <string name="ed_data">データ名</string>
+    <string name="bt_addData">データを登録する</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
