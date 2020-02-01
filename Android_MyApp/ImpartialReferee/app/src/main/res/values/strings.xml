@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">試作品</string>
     <string name="bt_selectElement">判定を開始する</string>
-    <string name="sw_deleteMode">削除モード</string>
-    <string name="sw_deleteModeOFF">OFF</string>
-    <string name="sw_deleteModeON">ON</string>
+    <string name="sw_deleteMode">削除モードOFF</string>
+    <string name="sw_deleteModeOFF">削除モードOFF</string>
+    <string name="sw_deleteModeON">削除モードON</string>
     <string name="ed_data">データ名</string>
     <string name="bt_addData">データを登録する</string>
     <!-- TODO: Remove or change this placeholder text -->

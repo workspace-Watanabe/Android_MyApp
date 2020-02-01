@@ -8,12 +8,12 @@ import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import kotlin.random.Random
 
-class SelectDialogFragment : DialogFragment() {
+class SelectDialogFragment(val dataList:MutableList<String>) : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
 
         //--------------フラグメントに使うデータリストをセット----------------//
-        val dataList = ListFragment1.dataList
+        val dataList = dataList
         val items = arrayOfNulls<String>(dataList.size)
         for((i,element) in dataList.withIndex()){
             items[i] = element
