@@ -10,18 +10,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/waku"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:descendantFocusability="beforeDescendants"
         android:focusableInTouchMode="true"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tv_dataName"
-            android:textColor="#ffffff"
+            android:textColor="#FFFFFF"
             android:textSize="15sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/edDataName"
             app:layout_constraintEnd_toStartOf="@+id/edDataName"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:ems="11"
             android:inputType="textPersonName"
-            android:textColor="#ffffff"
+            android:textColor="#FFFFFF"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -63,9 +63,26 @@
         android:id="@+id/dataList"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/tv_addData"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

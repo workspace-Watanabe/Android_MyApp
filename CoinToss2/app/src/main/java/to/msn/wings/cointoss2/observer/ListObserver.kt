@@ -56,11 +56,7 @@ class ListObserver : Observer{
         if(databaseHelper == null)
             databaseHelper = MainActivity.getInstance()?.getHelper()
         val result = databaseHelper?.deleteSQL(dataName)
-        val message = if(result ?: 0 <= 0)
-            "失敗しました。"
-        else
-            "成功しました。"
-        Toast.makeText(MainActivity.getInstance(),message,Toast.LENGTH_SHORT).show()
+        Toast.makeText(MainActivity.getInstance(),"${result}を削除しました。",Toast.LENGTH_SHORT).show()
     }
 
 }

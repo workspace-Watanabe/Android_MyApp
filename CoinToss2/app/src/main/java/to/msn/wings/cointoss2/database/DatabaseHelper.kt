@@ -66,11 +66,11 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context,
     /**
      * テーブルの値を削除
      */
-    fun deleteSQL(dataName: String) : Int{
+    fun deleteSQL(dataName: String) : String{
         val sql = "DELETE FROM cointoss WHERE name=?"
         val stmt = writableDatabase.compileStatement(sql)
         stmt.bindString(1,dataName)
-        val result =  stmt.executeUpdateDelete()
-        return result
+        stmt.executeUpdateDelete()
+        return dataName
     }
 }
