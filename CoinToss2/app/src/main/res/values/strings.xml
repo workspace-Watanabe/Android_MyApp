@@ -8,6 +8,7 @@
     <string name="bt_addData">データを挿入する</string>
     <string name="tv_choiceData">削除したいデータを長押ししてください</string>
     <string name="tv_addData">挿入したいデータ名を入力してください</string>
+    <string name="tv_result">↓に結果が出るよ！</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

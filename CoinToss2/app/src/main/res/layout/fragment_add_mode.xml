@@ -9,10 +9,11 @@
         android:id="@+id/constraintLayout3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/waku"
+        android:background="#B5CDFF"
         android:descendantFocusability="beforeDescendants"
         android:focusableInTouchMode="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -21,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tv_dataName"
-            android:textColor="#FFFFFF"
+            android:textColor="@android:color/background_dark"
             android:textSize="15sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/edDataName"
             app:layout_constraintEnd_toStartOf="@+id/edDataName"
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:ems="11"
             android:inputType="textPersonName"
-            android:textColor="#FFFFFF"
+            android:textColor="@android:color/background_dark"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -44,20 +45,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="115dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintGuide_begin="82dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:onClick="onClickAddButton"
-        android:text="@string/bt_addData"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAddButton"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="@string/bt_addData"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/edDataName" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="144dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ListView
         android:id="@+id/dataList"
@@ -67,20 +76,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:background="@android:color/holo_orange_light"
+        android:background="@color/colorAccent"
         android:gravity="center"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:text="@string/tv_addData"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
