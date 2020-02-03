@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CoinToss2</string>
+    <string name="tv_dataName">データ名 :</string>
+    <string name="tv_deleteModeOFF">削除モード : </string>
+    <string name="tv_deleteModeON">挿入モード : </string>
+    <string name="tv_dataList">データリスト</string>
+    <string name="tv_startJudge">判定を開始する</string>
+    <string name="bt_addData">データを挿入する</string>
+    <string name="tv_choiceData">削除したいデータを長押ししてください</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
