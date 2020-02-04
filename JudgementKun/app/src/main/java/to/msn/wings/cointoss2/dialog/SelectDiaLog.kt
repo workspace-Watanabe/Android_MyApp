@@ -32,20 +32,22 @@ class SelectDiaLog(val dataList : MutableList<String>) : DialogFragment() {
             { dialog: DialogInterface, which : Int, isChecked :Boolean->
                 selected[which] = isChecked
             }.setPositiveButton("判定する！！")
-            { dialog: DialogInterface, which: Int ->
-                val msg = arrayOfNulls<String>(selected.size)
-                var count = 0
-                for (i in 0 until selected.size) {
-                    if (selected[i])
-                        msg[count++] = items[i]
-                }
-                //ランダムで一つ選択!!
-                if (count > 0) {
-                    val randomResult = Random.nextInt(count)
-                    MainActivity.getInstance()?.setResultText("${msg[randomResult]}にしましょうよ！")
+                //---------ダイアログインターフェースの型とInt型を引数とした戻り値なしの関数をラムダで記述-------------
+                { dialog: DialogInterface, which: Int ->
+                    val msg = arrayOfNulls<String>(selected.size)
+                    var count = 0
+                    for (i in 0 until selected.size) {
+                        if (selected[i])
+                            msg[count++] = items[i]
+                    }
+                    //ランダムで一つ選択!!
+                    if (count > 0) {
+                        val randomResult = Random.nextInt(count)
+                        MainActivity.getInstance()?.setResultText("${msg[randomResult]}にしましょうよ！")
 
+                    }
                 }
-            }
-            .create()
+            ---------------------------------------------------------------------------------------------------------
+                .create()
     }
 }
